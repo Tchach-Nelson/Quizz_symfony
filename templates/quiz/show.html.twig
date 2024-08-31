@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Creer un quizz
+{% endblock %}
+
+{% block body %}
+	<div {{ react_component('Quiz', {quiz: quiz|serialize('json',{groups: 'quiz:read'} )}) }}></div>
+
+{% endblock %}
